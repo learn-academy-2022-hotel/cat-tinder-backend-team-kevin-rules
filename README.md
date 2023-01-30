@@ -66,4 +66,51 @@
     ```
 
     be sure to run `bundle` when are you done to install the above gem!
-    
+
+
+### Cloning a rails project:
+- $ git clone https://github.com/learn-academy-2022-hotel/cat-tinder-backend-team-kevin-rules.git
+- $ cd cat-tinder-backend-team-kevin-rules
+- $ git pull origin main
+- $ git checkout -b api-endpoints
+- $ bundle
+- $ code .
+
+- run $ rails db:setup will perform the following three terminal commands
+   $ rails db:create
+   $ rails db:migrate
+   $ rails db:seed
+
+- run $ rails db:reset will perform the following four commands
+  $ rails db:drop
+  $ rails db:create
+   $ rails db:migrate
+   $ rails db:seed
+
+Steps to create rails API
+1. Create a new rails app - rails will be in charge of controllers and models
+2. Enable CORS - Cross Origin Resource Sharing - allows react and rails to communicate
+3. Create models, controllers, and routes with a resource generator command
+4. Created, migrated, seeded the database
+5. Define the controller actions/endpoints: index, create, update, destroy
+6. Test API functionality with spec/requests
+
+Testing process
+- Stub the controller action methods/endpoints
+```ruby
+  def index
+  end
+
+  def create
+  end
+
+  def update
+  end
+
+  def destroy
+  end
+```
+- Create a test in spec/requests
+- see good failure
+- Modify the controller action with logic 
+- See a valid pass
