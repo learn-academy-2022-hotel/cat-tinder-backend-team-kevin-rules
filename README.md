@@ -69,25 +69,28 @@
 
 
 ### Cloning a rails project:
-- $ git clone https://github.com/learn-academy-2022-hotel/cat-tinder-backend-team-kevin-rules.git
-- $ cd cat-tinder-backend-team-kevin-rules
+- $ git clone <repo>
+- $ cd into <repo>
 - $ git pull origin main
 - $ git checkout -b api-endpoints
 - $ bundle
 - $ code .
+- $ rails s
 
 - run $ rails db:setup will perform the following three terminal commands
    $ rails db:create
    $ rails db:migrate
    $ rails db:seed
 
-- run $ rails db:reset will perform the following four commands
-  $ rails db:drop
-  $ rails db:create
-   $ rails db:migrate
-   $ rails db:seed
+```bash
+    - NOTE - $ rails db:reset will perform the following four commands
+      $ rails db:drop
+      $ rails db:create
+      $ rails db:migrate
+      $ rails db:seed
+```
 
-Steps to create rails API
+### Steps to create rails API
 1. Create a new rails app - rails will be in charge of controllers and models
 2. Enable CORS - Cross Origin Resource Sharing - allows react and rails to communicate
 3. Create models, controllers, and routes with a resource generator command
@@ -95,7 +98,7 @@ Steps to create rails API
 5. Define the controller actions/endpoints: index, create, update, destroy
 6. Test API functionality with spec/requests
 
-Testing process
+### Testing process
 - Stub the controller action methods/endpoints
 ```ruby
   def index
@@ -112,5 +115,11 @@ Testing process
 ```
 - Create a test in spec/requests
 - see good failure
-- Modify the controller action with logic 
+- Modify the controller action with logic  - apps/controllers
+- See a valid pass
+
+### API Validations
+- Create a test in spec/models
+- see good failure
+- Modify the model with logic - app/models
 - See a valid pass
