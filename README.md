@@ -1,36 +1,37 @@
 # CAT TINDER BACKEND NOTES
 
- rails new cat-tinder-backend -d postgresql -T
-  $  cd cat-tinder-backend
-  $  rails db:create
-  $  bundle add rspec-rails
-  $  rails generate rspec:install
-  $  git remote add origin https://github.com/learn-academy-2022-hotel/cat-tinder-backend-team-kevin-rules.git\n
-  $  git branch
-  $  git checkout -b main
-  $  git status
-  $  git add .
-  $  git commit -m "initial commit"
-  $  git push origin main
-  $  rails s
-  $  git checkout -b backend-structure
-  $  rails g resource Cat name:string age:integer enjoys:string image:string
-  $  rails db:migrate
-  $  code .
-  $  rspec spec
+### SETUP
+ - $ rails new cat-tinder-backend -d postgresql -T
+  - $  cd cat-tinder-backend
+  - $  rails db:create
+  - $  bundle add rspec-rails
+  - $  rails generate rspec:install
+  - $  git remote add origin https://github.com/learn-academy-2022-hotel/cat-tinder-backend-team-kevin-rules.git\n
+  - $  git branch
+  - $  git checkout -b main
+  - $  git status
+  - $  git add .
+  - $  git commit -m "initial commit"
+  - $  git push origin main
+  - $  rails s
+  - $  git checkout -b backend-structure
+  - $  rails g resource Cat name:string age:integer enjoys:string image:string
+  - $  rails db:migrate
+  - $  code .
+  - $  rspec spec
 
-  # AFTER ADDING SEEDS
+  ### AFTER ADDING SEEDS
 
-  $ rails db:seed
+  - $ rails db:seed
 
-  # TO RESET THE DB
-  $  rails db:drop
-  $  rails db:create
-  $  rails db:migrate
-  $  rails db:seed
+  ### TO RESET THE DB
+  - $  rails db:drop
+  - $  rails db:create
+  - $  rails db:migrate
+  - $  rails db:seed
  
 
- # CORS
+ ### CORS
   What is CORS - Cross-Origin Resource Sharing.  This enables our Rails application to accept requests from the React application.
 
     We add `skip_before_action :verify_authenticity_token` to our application controller.
